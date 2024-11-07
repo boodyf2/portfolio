@@ -89,7 +89,7 @@ export const ProjectsSection = () => {
                                         <Link
                                             href={project.links.livePrev}
                                             className={buttonVariants({
-                                                variant: "default",
+                                                variant: "secondary",
                                             })}
                                             target="_blank"
                                         >

@@ -2,7 +2,7 @@ import Image from "next/image";
 import memojiImg from "@/assets/images/memoji-computer.png";
 import grainImg from "@/assets/images/grain.jpg";
 
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowDown, Sparkle, Sparkles } from "lucide-react";
 import HeroOrbit from "@/components/HeroOrbit";
 
@@ -41,17 +41,26 @@ export const HeroSection = () => {
                 </div>
 
                 <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-                    <Button
-                        variant="outline"
-                        className="font-semibold bg-transparent"
+                    <a
+                        href="#projects"
+                        className={buttonVariants({
+                            variant: "outline",
+                            className: "font-semibold",
+                        })}
                     >
                         <span>Explore My Work</span>
                         <ArrowDown />
-                    </Button>
-                    <Button className="font-semibold">
+                    </a>
+                    <a
+                        href="mailto:abdalrahman.vim@gmail.com"
+                        className={buttonVariants({
+                            variant: "secondary",
+                            className: "font-semibold",
+                        })}
+                    >
                         <span>👋</span>
                         <span>Let&apos;s Connect</span>
-                    </Button>
+                    </a>
                 </div>
             </div>
 

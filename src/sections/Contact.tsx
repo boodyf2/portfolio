@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import grainImg from "@/assets/images/grain.jpg";
 
@@ -19,15 +19,19 @@ export const ContactSection = () => {
                             </p>
                         </div>
                         <div>
-                            <Button
-                                size="lg"
-                                className="bg-gray-900 text-white hover:bg-gray-900/90"
+                            <a
+                                href="mailto:abdalrahman.vim@gmail.com"
+                                className={buttonVariants({
+                                    size: "lg",
+                                    className:
+                                        "bg-gray-900 text-white hover:bg-gray-900/90",
+                                })}
                             >
                                 <span className="text-semibold">
                                     Contact Me
                                 </span>
                                 <ArrowUpRight className="size-4" />
-                            </Button>
+                            </a>
                         </div>
                     </div>
                     <div
