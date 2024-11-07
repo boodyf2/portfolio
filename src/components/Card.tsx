@@ -1,18 +1,20 @@
 import grainImg from "@/assets/images/grain.jpg";
 import { cn } from "@/lib/utils";
 import { Sparkle } from "lucide-react";
-import { PropsWithChildren } from "react";
+import { ComponentPropsWithoutRef } from "react";
 
 export const Card = ({
     className,
     children,
-}: PropsWithChildren<{ className?: string }>) => {
+    ...other
+}: ComponentPropsWithoutRef<"div">) => {
     return (
         <div
             className={cn(
                 "p-6 bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:absolute after:inset-0 after:z-10 after:outline after:outline-2 after:-outline-offset-2 after:outline-white/20 after:rounded-3xl after:pointer-events-none",
                 className
             )}
+            {...other}
         >
             {children}
             <div

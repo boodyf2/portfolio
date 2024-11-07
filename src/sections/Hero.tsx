@@ -21,7 +21,7 @@ export const HeroSection = () => {
                     />
                     <div className="flex items-center gap-4 bg-gray-950 border border-gray-800 px-4 py-1.5 rounded-lg">
                         <div className="size-2.5 rounded-full bg-green-500 relative">
-                            <div className="rounded-full bg-green-500 animate-ping absolute inset-0" />
+                            <div className="rounded-full bg-green-500 animate-ping-large absolute inset-0" />
                         </div>
                         <p className="text-sm font-medium">
                             Available for new projects
@@ -67,39 +67,100 @@ export const HeroSection = () => {
                 <div className="hero-ring size-[820px]" />
                 <div className="hero-ring size-[1020px]" />
                 <div className="hero-ring size-[1220px]" />
-                <HeroOrbit size={800} rotation={-72}>
-                    <Sparkle className="fill-emerald-300 text-emerald-300 size-28" />
-                </HeroOrbit>
-                <HeroOrbit size={550} rotation={20}>
-                    <Sparkle className="fill-emerald-300 text-emerald-300 size-12" />
-                </HeroOrbit>
-                <HeroOrbit size={590} rotation={98}>
-                    <Sparkle className="fill-emerald-300 text-emerald-300 size-8" />
-                </HeroOrbit>
 
-                {/* Dimmed Sparkles */}
-                <HeroOrbit size={430} rotation={-14}>
+                <HeroOrbit
+                    size={430}
+                    rotation={-14}
+                    shouldOrbit
+                    orbitDuration={30}
+                    shouldSpin
+                    spinDuration={6}
+                >
                     <Sparkles className="fill-emerald-300 text-emerald-300 size-8 opacity-20" />
                 </HeroOrbit>
-                <HeroOrbit size={440} rotation={79}>
+                <HeroOrbit
+                    size={440}
+                    rotation={79}
+                    shouldOrbit
+                    orbitDuration={32}
+                    shouldSpin
+                    spinDuration={6}
+                >
                     <Sparkles className="fill-emerald-300 text-emerald-300 size-5 opacity-20" />
                 </HeroOrbit>
-                <HeroOrbit size={530} rotation={178}>
+                <HeroOrbit
+                    size={520}
+                    rotation={-41}
+                    shouldOrbit
+                    orbitDuration={34}
+                >
+                    <div className="size-2 bg-emerald-300 rounded-full opacity-20" />
+                </HeroOrbit>
+                <HeroOrbit
+                    size={530}
+                    rotation={178}
+                    shouldOrbit
+                    orbitDuration={36}
+                    shouldSpin
+                    spinDuration={6}
+                >
                     <Sparkles className="fill-emerald-300 text-emerald-300 size-10 opacity-20" />
                 </HeroOrbit>
-                <HeroOrbit size={710} rotation={144}>
+                <HeroOrbit
+                    size={550}
+                    rotation={20}
+                    shouldOrbit
+                    orbitDuration={38}
+                    shouldSpin
+                    spinDuration={8}
+                >
+                    <Sparkle className="fill-emerald-300 text-emerald-300 size-12" />
+                </HeroOrbit>
+                <HeroOrbit
+                    size={590}
+                    rotation={98}
+                    shouldOrbit
+                    orbitDuration={40}
+                    shouldSpin
+                    spinDuration={8}
+                >
+                    <Sparkle className="fill-emerald-300 text-emerald-300 size-8" />
+                </HeroOrbit>
+                <HeroOrbit
+                    size={650}
+                    rotation={-5}
+                    shouldOrbit
+                    orbitDuration={42}
+                >
+                    <div className="size-2 bg-emerald-300 rounded-full opacity-20" />
+                </HeroOrbit>
+                <HeroOrbit
+                    size={710}
+                    rotation={144}
+                    shouldOrbit
+                    orbitDuration={44}
+                    shouldSpin
+                    spinDuration={6}
+                >
                     <Sparkles className="fill-emerald-300 text-emerald-300 size-14 opacity-20" />
                 </HeroOrbit>
-
-                {/* Dimmed Circles */}
-                <HeroOrbit size={720} rotation={85}>
+                <HeroOrbit
+                    size={720}
+                    rotation={85}
+                    shouldOrbit
+                    orbitDuration={46}
+                >
                     <div className="size-3 bg-emerald-300 rounded-full opacity-20" />
                 </HeroOrbit>
-                <HeroOrbit size={520} rotation={-41}>
-                    <div className="size-2 bg-emerald-300 rounded-full opacity-20" />
-                </HeroOrbit>
-                <HeroOrbit size={650} rotation={-5}>
-                    <div className="size-2 bg-emerald-300 rounded-full opacity-20" />
+                <HeroOrbit
+                    size={800}
+                    rotation={-72}
+                    shouldOrbit
+                    orbitDuration={48}
+                    shouldSpin
+                    spinDuration={8}
+                >
+                    <Sparkle className="fill-emerald-300 text-emerald-300 size-28" />
                 </HeroOrbit>
             </div>
         </section>

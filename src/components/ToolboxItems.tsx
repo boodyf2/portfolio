@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import TechIcon from "./TechIcon";
+import { Fragment } from "react";
 
 interface ToolboxItemsProps {
     items: {
@@ -24,18 +25,24 @@ const ToolboxItems = ({
         >
             <div
                 className={cn(
-                    "flex flex-none py-0.5 gap-6 pr-6",
+                    "flex flex-none py-0.5 gap-6 pr-6 animate-move-left",
                     itemsWrapperClassName
                 )}
             >
-                {items.map((tool) => (
-                    <div
-                        key={tool.title}
-                        className="py-2 px-3 inline-flex items-center gap-4 outline outline-2 outline-white/10 rounded-lg"
-                    >
-                        <TechIcon component={tool.Icon} />
-                        <span className="font-semibold">{tool.title}</span>
-                    </div>
+                {[...new Array(2)].fill(0).map((_, idx) => (
+                    <Fragment key={idx}>
+                        {items.map((tool) => (
+                            <div
+                                key={tool.title}
+                                className="py-2 px-3 inline-flex items-center gap-4 outline outline-2 outline-white/10 rounded-lg"
+                            >
+                                <TechIcon component={tool.Icon} />
+                                <span className="font-semibold">
+                                    {tool.title}
+                                </span>
+                            </div>
+                        ))}
+                    </Fragment>
                 ))}
             </div>
         </div>

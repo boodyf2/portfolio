@@ -1,4 +1,5 @@
 import caseCobraLandingPage from "@/assets/images/landing-pages/casecobra-landing-page.png";
+import pingPandaLandingPage from "@/assets/images/landing-pages/pingpanda-landing-page.png";
 import { buttonVariants } from "@/components/ui/button";
 import { ArrowUpRight, CheckCircle } from "lucide-react";
 import Image from "next/image";
@@ -24,19 +25,19 @@ const portfolioProjects = [
         image: caseCobraLandingPage,
     },
     {
-        company: "CaseCobra-2",
+        company: "PingPanda",
         year: "2024",
-        title: "A modern e-commerce platform for custom phone cases",
+        title: "A Modern Fullstack Event Monitoring SaaS",
         features: [
-            "Complete shop built from scratch in Next.js 14",
-            "Full TypeScript implementation",
-            "Authentication via Auth.js",
+            "Complete SaaS built in modern Next.js 15",
+            "Real-time event messages via Discord",
+            "Clean & intuitive event monitoring dashboard",
         ],
         links: {
-            srcCode: "https://github.com/boodyf2/casecobra",
-            livePrev: "https://casecobra-lake-iota.vercel.app/",
+            srcCode: "https://github.com/boodyf2/ping-panda",
+            livePrev: "#",
         },
-        image: caseCobraLandingPage,
+        image: pingPandaLandingPage,
     },
 ];
 
@@ -51,9 +52,12 @@ export const ProjectsSection = () => {
                 />
 
                 <div className="mt-10 md:mt-24 flex flex-col gap-20">
-                    {portfolioProjects.map((project) => (
+                    {portfolioProjects.map((project, projectIndex) => (
                         <Card
-                            className="pb-0 pt-8 px-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
+                            className="pb-0 pt-8 px-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+                            style={{
+                                top: `calc(64px + ${projectIndex * 40}px)`,
+                            }}
                             key={project.company}
                         >
                             <div className="grid lg:grid-cols-2 gap-16">

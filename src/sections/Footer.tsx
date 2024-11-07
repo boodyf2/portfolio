@@ -14,7 +14,7 @@ const FOOTER_LINKS = [
 export const Footer = () => {
     const curYear = new Date().getFullYear();
     return (
-        <footer className="relative z-0">
+        <footer className="relative z-0 overflow-x-clip">
             <div className="container">
                 <div className="border-t border-white/15 py-6 text-sm flex flex-col md:flex-row items-center md:justify-between gap-8">
                     <div className="text-white/40">
