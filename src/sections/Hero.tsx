@@ -2,7 +2,7 @@ import Image from "next/image";
 import memojiImg from "@/assets/images/memoji-computer.png";
 import grainImg from "@/assets/images/grain.jpg";
 
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { ArrowDown, Sparkle, Sparkles } from "lucide-react";
 import HeroOrbit from "@/components/HeroOrbit";
 
