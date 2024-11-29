@@ -29,14 +29,15 @@ export const HeroSection = () => {
                     </div>
                 </div>
 
-                <div className="max-w-lg mx-auto space-y-4">
+                <div className="max-w-xl mx-auto space-y-4">
                     <h1 className="font-serif text-center text-3xl md:text-5xl tracking-tight">
                         Building Exceptional User Experiences
                     </h1>
                     <p className="text-center text-white/60 md:text-lg">
-                        I specialize in transforming designs into functional,
-                        high-performance web applications. Let&apos;s discuss
-                        your next project.
+                        Hi, I&apos;m Abdalrahman, a 21 years old full-stack
+                        developer passionate about creating seamless web
+                        applications based in Egypt. <br />
+                        Want to elevate your online presence?
                     </p>
                 </div>
 
